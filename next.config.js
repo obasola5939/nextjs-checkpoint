@@ -1,9 +1,7 @@
-// next.config.js
-/** @type {import('next').NextConfig} */
+// next.config.js - Add for static export
 const nextConfig = {
+  output: 'export', // Enable static export
   images: {
-    domains: ['images.unsplash.com', 'github.com'],
+    unoptimized: true, // Required for static export with images
   },
 }
-
-module.exports = nextConfig
